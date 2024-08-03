@@ -7,7 +7,6 @@ const app = express();
 const server = http.createServer(app);
 const io = socketIo(server, {cors: {origin: "*", methods: ["GET", "POST"]}});
 
-app.use(cors());
 app.use(express.json());
 app.use(cors({ origin: "*" }));
 app.use((req, res, next) => {
