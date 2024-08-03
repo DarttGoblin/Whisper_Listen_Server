@@ -9,14 +9,14 @@ const app = express();
 const server = http.createServer(app);
 const io = socketIo(server, {
     cors: {
-        origin: "https://darttgoblin.github.io",
+        origin: "https://darttgoblin.github.io/Whisper/WhisperEmbPages/Group/Group.html",
         methods: ["GET", "POST"]
     }
 });
 
 app.use(express.json());
 app.use(cors({
-    origin: "https://darttgoblin.github.io",
+    origin: "https://darttgoblin.github.io/Whisper/WhisperEmbPages/Group/Group.html",
     methods: ["GET", "POST"],
     allowedHeaders: ["Content-Type"]
 }));
