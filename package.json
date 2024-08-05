@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "start": "node server.js",
-    "devStart": "nodemon server.js"
+    "start": "node Listen.js",
+    "devStart": "nodemon Listen.js"
   },
   "author": "",
   "license": "ISC",
