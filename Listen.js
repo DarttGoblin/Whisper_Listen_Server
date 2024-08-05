@@ -1,5 +1,3 @@
-console.log("i am working");
-
 const express = require('express');
 const cors = require('cors');
 const http = require('http');
@@ -28,10 +26,7 @@ app.use((req, res, next) => {
     next();
 });
 
-console.log("i am still working");
-
 io.on('connection', socket => {
-    console.log("sockets are working");
     socket.on('user-connected', user => {
         socket.user = user; 
         socket.emit('recieve-user-connected', user)
